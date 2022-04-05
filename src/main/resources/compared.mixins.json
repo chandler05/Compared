@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fabricmc.compared.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractBlockState_M"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

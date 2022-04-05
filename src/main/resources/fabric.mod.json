@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "gauze",
+  "id": "compared",
   "version": "${1.0}",
 
-  "name": "Gauze",
-  "description": "Gauze is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.",
+  "name": "Compared",
+  "description": "Adding more stuff to use comparators on.",
   "authors": [
     "Chandler"
   ],
 
   "license": "CC0-1.0",
-  "icon": "assets/gauze/icon.png",
+  "icon": "assets/compared/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.gauze.Main"
+      "net.fabricmc.compared.Main"
     ]
   },
   "mixins": [
-    "gauze.mixins.json"
+    "compared.mixins.json"
   ],
 
   "depends": {

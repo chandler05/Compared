@@ -1,27 +1,28 @@
-# Gauze
+# Compared
 
 ## About
 
-Gauze is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.
+Compared is a Fabric mod for Minecraft that gives comparator functionality to new blocks!
 
 
 
 
-## List of Fixes:
-MC-14167 - Mobs build up fall damage when dangling on a lead
+## New Comparator Stuff
 
-MC-16663 - Lead remains attached to the fence when the mob is killed
+### Campfires
+Campfires can now be read by comparators. Their output is based on the number of items cooking, and the campfire's lit status.
 
-MC-116379 - Punching with a cast fishing rod in the off-hand detaches fishing line from rod
+####Output
+3 levels per item + 1 level for being lit + 1 level for being a signal fire
 
-MC-129886 - Trying to place a block underneath min_y does not give an error message
+### Signs
+Signs now give a comparator output based on their glow and how many lines on them have text.
 
-MC-132199 - Items with rarity values will not display their rarity colors when renamed and put in an item frame
+####Output
+3, 7, 11, 14, for each line of text that is not empty + 1 if the sign has glowing text
 
-MC-153929 - Trident entities make arrow sounds if they land on a block more than once
+### Beds
+Beds will output a comparator value based on who is sleeping in it.
 
-MC-166272 - Comparator can't read inventory of campfire
-
-MC-183776 - After switching gamemodes using F3+F4, you need to press F3 twice to toggle the debug screen
-
-MC-185618 - Creepers can't be ignited with a fire charge
+####Output
+1 if occupied by a villager, 2 if occupied by the player or anything else
